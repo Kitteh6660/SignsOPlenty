@@ -38,7 +38,7 @@ displayName="Signs o' Plenty" #mandatory
 #displayURL="" #optional
 
 # A file name (in the root of the mod JAR) containing a logo for display
-#logoFile="ModBanner.png" #optional
+logoFile="ModBanner.png" #optional
 
 # A text field displayed in the mod UI
 credits="The original Biomes o' Plenty mod by the original creators" #optional
