@@ -1,7 +1,7 @@
 package kittehmod.bopsigns.client;
 
-import net.minecraft.client.renderer.Atlases;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.client.renderer.Sheets;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.TextureStitchEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -25,7 +25,7 @@ public class ClientHelper {
 	
 	@SubscribeEvent
 	public static void onStitch(TextureStitchEvent.Pre event) {
-		if (event.getMap().location().equals(Atlases.SIGN_SHEET)) {
+		if (event.getMap().location().equals(Sheets.SIGN_SHEET)) {
 			event.addSprite(CHERRY_SIGN_LOCATION);
 			event.addSprite(DEAD_SIGN_LOCATION);
 			event.addSprite(FIR_SIGN_LOCATION);

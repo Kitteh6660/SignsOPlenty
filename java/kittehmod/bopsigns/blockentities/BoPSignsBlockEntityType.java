@@ -2,19 +2,19 @@ package kittehmod.bopsigns.blockentities;
 
 import kittehmod.bopsigns.BoPSignsMod;
 import kittehmod.bopsigns.blocks.BoPSignsBlocks;
-import net.minecraft.tileentity.TileEntityType;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class BoPSignsBlockEntityType
 {
-	public static final DeferredRegister<TileEntityType<?>> BLOCK_ENTITIES = DeferredRegister.create(ForgeRegistries.TILE_ENTITIES, "biomesoplenty");
+	public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, "biomesoplenty");
 
-	public static RegistryObject<TileEntityType<BoPSignBlockEntity>> BOP_SIGN = BLOCK_ENTITIES.register("bop_sign", () -> TileEntityType.Builder.of(BoPSignBlockEntity::new, 
+	public static RegistryObject<BlockEntityType<BoPSignBlockEntity>> BOP_SIGN = BLOCK_ENTITIES.register("bop_sign", () -> BlockEntityType.Builder.of(BoPSignBlockEntity::new, 
 		BoPSignsBlocks.CHERRY_SIGN.get(), BoPSignsBlocks.CHERRY_WALL_SIGN.get(),
 		BoPSignsBlocks.DEAD_SIGN.get(), BoPSignsBlocks.DEAD_WALL_SIGN.get(),
 		BoPSignsBlocks.FIR_SIGN.get(), BoPSignsBlocks.FIR_WALL_SIGN.get(),
@@ -32,7 +32,7 @@ public class BoPSignsBlockEntityType
     public static class Registration
     {
         @SubscribeEvent
-        public static void onBlockEntityRegistry(final RegistryEvent.Register<TileEntityType<?>> e)
+        public static void onBlockEntityRegistry(final RegistryEvent.Register<BlockEntityType<?>> e)
         {
             e.getRegistry().registerAll();
         }

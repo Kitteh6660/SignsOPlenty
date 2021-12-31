@@ -1,6 +1,6 @@
 package kittehmod.bopsigns.blocks;
 
-import net.minecraft.block.WoodType;
+import net.minecraft.world.level.block.state.properties.WoodType;
 
 public class BoPWoodType
 {

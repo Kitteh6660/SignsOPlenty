@@ -1,16 +1,15 @@
 package kittehmod.bopsigns.blocks;
 
 import kittehmod.bopsigns.BoPSignsMod;
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.material.MaterialColor;
-import net.minecraft.item.Item;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.IForgeRegistryEntry;
@@ -69,10 +68,10 @@ public class BoPSignsBlocks
 	    	event.getRegistry().registerAll();
 	    }
 	    
-	    @SubscribeEvent
+	    /*@SubscribeEvent
 	    public static void registerItemBlocks(final RegistryEvent.Register<Item> event) {
 	    	event.getRegistry().registerAll();
-	    }
+	    }*/
 	}
     
 }

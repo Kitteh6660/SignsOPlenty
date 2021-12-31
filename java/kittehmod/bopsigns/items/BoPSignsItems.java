@@ -2,14 +2,14 @@ package kittehmod.bopsigns.items;
 
 import kittehmod.bopsigns.BoPSignsMod;
 import kittehmod.bopsigns.blocks.BoPSignsBlocks;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.SignItem;
-import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SignItem;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -29,10 +29,10 @@ public class BoPSignsItems
     public static final RegistryObject<Item> UMBRAN_SIGN = ITEMS.register("umbran_sign", () -> new SignItem((new Item.Properties()).stacksTo(16).tab(getTabWithMatchingName("biomesoplenty")), BoPSignsBlocks.UMBRAN_SIGN.get(), BoPSignsBlocks.UMBRAN_WALL_SIGN.get()));
     public static final RegistryObject<Item> WILLOW_SIGN = ITEMS.register("willow_sign", () -> new SignItem((new Item.Properties()).stacksTo(16).tab(getTabWithMatchingName("biomesoplenty")), BoPSignsBlocks.WILLOW_SIGN.get(), BoPSignsBlocks.WILLOW_WALL_SIGN.get()));
     
-    private static ItemGroup getTabWithMatchingName(String tabName) {
-    	ItemGroup tab = null;
-    	for (ItemGroup tempTab : ItemGroup.TABS) {
-    		TranslationTextComponent tabComp = (TranslationTextComponent) tempTab.getDisplayName();
+    private static CreativeModeTab getTabWithMatchingName(String tabName) {
+    	CreativeModeTab tab = null;
+    	for (CreativeModeTab tempTab : CreativeModeTab.TABS) {
+    		TranslatableComponent tabComp = (TranslatableComponent) tempTab.getDisplayName();
     		if (tabComp.getKey().equalsIgnoreCase("itemGroup." + tabName)) {
     			tab = tempTab;
     			break;
