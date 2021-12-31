@@ -25,7 +25,7 @@ public class ClientHelper {
 	
 	@SubscribeEvent
 	public static void onStitch(TextureStitchEvent.Pre event) {
-		if (event.getMap().location().equals(Sheets.SIGN_SHEET)) {
+		if (event.getAtlas().location().equals(Sheets.SIGN_SHEET)) {
 			event.addSprite(CHERRY_SIGN_LOCATION);
 			event.addSprite(DEAD_SIGN_LOCATION);
 			event.addSprite(FIR_SIGN_LOCATION);
