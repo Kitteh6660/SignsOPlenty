@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "biomesoplenty:umbran_sign"
+      "biomesoplenty:dark_oak_sign_from_umbran_planks"
     ]
   },
   "criteria": {
@@ -19,7 +19,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "biomesoplenty:umbran_sign"
+        "recipe": "biomesoplenty:dark_oak_sign_from_umbran_planks"
       }
     }
   },

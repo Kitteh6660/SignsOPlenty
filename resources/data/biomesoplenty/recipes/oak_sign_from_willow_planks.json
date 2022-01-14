@@ -1,21 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "sign",
+  "group": "bop_sign",
   "pattern": [
     "###",
     "###",
-    " $ "
+    " X "
   ],
   "key": {
     "#": {
-      "item": "biomesoplenty:mahogany_planks"
+      "item": "biomesoplenty:willow_planks"
     },
-    "$": {
+    "X": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "biomesoplenty:mahogany_sign",
+    "item": "biomesoplenty:willow_sign",
     "count": 3
   }
 }
