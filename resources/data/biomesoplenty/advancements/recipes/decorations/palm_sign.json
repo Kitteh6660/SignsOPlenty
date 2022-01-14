@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "biomesoplenty:palm_sign"
+      "biomesoplenty:acacia_sign_from_palm_planks"
     ]
   },
   "criteria": {
@@ -11,9 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "biomesoplenty:palm_planks"
-            ]
+            "items": [ "biomesoplenty:palm_planks" ]
           }
         ]
       }
@@ -21,7 +19,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "biomesoplenty:palm_sign"
+        "recipe": "biomesoplenty:acacia_sign_from_palm_planks"
       }
     }
   },

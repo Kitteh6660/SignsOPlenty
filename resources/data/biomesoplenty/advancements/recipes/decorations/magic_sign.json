@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "biomesoplenty:magic_sign"
+      "biomesoplenty:birch_sign_from_magic_planks"
     ]
   },
   "criteria": {
@@ -11,9 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "biomesoplenty:magic_planks"
-            ]
+            "items": [ "biomesoplenty:magic_planks" ]
           }
         ]
       }
@@ -21,7 +19,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "biomesoplenty:magic_sign"
+        "recipe": "biomesoplenty:birch_sign_from_magic_planks"
       }
     }
   },

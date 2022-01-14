@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "biomesoplenty:willow_sign"
+      "biomesoplenty:oak_sign_from_willow_planks"
     ]
   },
   "criteria": {
@@ -11,9 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "biomesoplenty:willow_planks"
-            ]
+            "items": [ "biomesoplenty:willow_planks" ]
           }
         ]
       }
@@ -21,7 +19,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "biomesoplenty:willow_sign"
+        "recipe": "biomesoplenty:oak_sign_from_willow_planks"
       }
     }
   },

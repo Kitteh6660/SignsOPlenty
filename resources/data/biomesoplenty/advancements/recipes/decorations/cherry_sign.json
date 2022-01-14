@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "biomesoplenty:cherry_sign"
+      "biomesoplenty:jungle_sign_from_cherry_planks"
     ]
   },
   "criteria": {
@@ -11,9 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "biomesoplenty:cherry_planks"
-            ]
+            "items": [ "biomesoplenty:cherry_planks" ]
           }
         ]
       }
@@ -21,7 +19,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "biomesoplenty:cherry_sign"
+        "recipe": "biomesoplenty:jungle_sign_from_cherry_planks"
       }
     }
   },

@@ -1,21 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "sign",
+  "group": "bop_sign",
   "pattern": [
     "###",
     "###",
-    " $ "
+    " X "
   ],
   "key": {
     "#": {
-      "item": "biomesoplenty:umbran_planks"
+      "item": "biomesoplenty:palm_planks"
     },
-    "$": {
+    "X": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "biomesoplenty:umbran_sign",
+    "item": "biomesoplenty:palm_sign",
     "count": 3
   }
 }
